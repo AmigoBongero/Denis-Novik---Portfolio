@@ -1,0 +1,260 @@
+@font-face {
+	font-family: 'Gilroy-Medium';
+	font-display: swap;
+	src: url("..fonts/Gilroy-Medium.eot");
+	src: local("O"), url("../fonts/Gilroy-Medium.woff") format("woff"), 
+			url("../fonts/Gilroy-Medium.ttf") format("truetype"), 
+			url("../fonts/Gilroy-Medium.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	font-display: swap;
+	src: url("..fonts/Gilroy-Bold.eot");
+	src: local("O"), url("../fonts/Gilroy-Bold.woff") format("woff"), 
+			url("../fonts/Gilroy-Bold.ttf") format("truetype"), 
+			url("../fonts/Gilroy-Bold.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+header{
+    padding: 0 250px;
+}
+#menu-container{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    margin: 0px 0 40px 0;
+    border-bottom: 1px solid grey;
+    font: 18px 'Gilroy-Bold';
+    line-height: 22px;
+    color: #828282;
+}
+#menu-container div{
+    padding: 30px 0 40px 0;
+}
+
+
+
+#Denis-Novik{
+    padding: 0 250px;
+}
+#Denis-Novik-container{
+    display: flex;
+    justify-content: space-between;
+}
+#left-part{
+    font: bold 47px 'Gilroy-Bold';
+    color: black;
+    line-height: 59px;
+}
+#center-part{
+    font: 18px 'Gilroy-Medium';
+    color: black;
+    line-height: 22px;
+    padding-top: 52px;
+}
+#right-part{
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    padding-top: 26px;
+    font: bold 16px 'Gilroy-Bold';
+    color: #828282;
+
+}
+#Denis-Novik-Photo{
+    overflow-x: hidden;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+a{
+    color: #828282;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    transition: all 1s ease 0s;
+}
+
+
+
+#about-me-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #F6F6F6;
+    height: 500px;
+    margin-top: 100px;
+}
+h1{
+    font: 34px'Gilroy-Bold';
+    line-height: 42px;
+}
+p{
+    font: 18px 'Gilroy-Medium';
+    line-height: 22px;
+}
+
+
+
+#skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+    padding: 0 250px;
+}
+#skills-images-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+    font: 14px'Gilroy-Bold';
+    color: #828282;
+    line-height: 17px;
+    overflow-x: hidden;
+}
+#skills-paragraph{
+    margin-top: 40px;
+}
+.image-text{
+    margin-bottom: 40px;
+    margin-top: 23px;
+}
+
+#portfolio-container{
+    background-color: #F6F6F6;
+    padding: 0 250px;
+    text-align: center;
+}
+#portfolio-headline{
+    padding-top: 110px;
+    padding-bottom: 45px;
+}
+.sub{
+    padding-top: 45px;
+    padding-bottom: 100px;
+    font: 18px 'Gilroy-Medium';
+    line-height: 22px;
+    text-decoration: underline;
+}
+
+
+
+#footer-container{
+    text-align: center;
+    padding-top: 100px;
+}
+#send-message-button{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    font: 18px 'Gilroy-Bold';
+    line-height: 22px;
+    width: 180px;
+    height: 42px;
+}
+#link2{
+    color: white;
+}
+#link2:hover{
+    color: #828282;
+    transition: all 1s ease 0s;
+}
+#social-media-images{
+    padding-top: 85px;
+    padding-bottom: 45px;
+}
+#send-message-button{
+    margin-top: 30px;
+}
+#footer-text{
+    font: 14px 'Gilroy-Medium';
+    line-height: 17px;
+    color: #828282;
+    padding-bottom: 120px;
+}
+#inst-icon{
+    padding: 0 60px;
+}
+#behance-icon{
+    padding-right: 60px;
+}
+
+#popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #56555571;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 1s ease 0s;
+}
+#popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+#popup-area{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#popup-body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+#popup-content{
+    color: black;
+    max-width: 800px;
+    position: relative;
+}
+#popup-close{
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    font-size: 20px;
+}
+#send-button{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    font: 18px 'Gilroy-Bold';
+    line-height: 22px;
+    width: 180px;
+    height: 42px;
+    margin: 10px 0;
+}
+#send-button:hover{
+    color: #828282;
+    transition: all 1s ease 0s;
+}
+#send-textarea{
+    font: 14px'Gilroy-Bold';
+    resize: none;
+    border-radius: 15px;
+}
