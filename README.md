@@ -1,1 +1,1 @@
-https://AmigoBongero.github.io/Denis-Novik---Portfolio/index
+https://AmigoBongero.github.io/Denis-Novik---Portfolio/
