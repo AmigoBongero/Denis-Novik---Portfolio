@@ -29,6 +29,9 @@ img{
     max-width: 100%;
     height: auto;
 }
+.image-item{
+    min-width: 100%;
+}
 #menu-container{
     display: flex;
     justify-content: space-between;
